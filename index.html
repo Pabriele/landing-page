@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gajléH crochet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Raleway', sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
@@ -16,42 +17,92 @@
             padding: 20px;
             font-size: 24px;
             font-weight: bold;
+            background-image: url('header-background.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .logo {
+            height: 50px;
+            margin-right: 15px;
         }
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
         }
-        .gallery img {
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .polaroid {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 320px;
+        }
+        .polaroid img {
             width: 100%;
             max-width: 300px;
-            margin: 10px;
+            display: block;
+            margin: 0 auto;
+        }
+        .caption {
+            margin-top: 10px;
+            font-weight: bold;
         }
         .contact {
             margin-top: 20px;
         }
         .contact a {
-            display: block;
+            display: inline-block;
             margin: 10px;
+            padding: 10px 20px;
             text-decoration: none;
-            color: #0073e6;
+            color: #fff;
+            background-color: #0073e6;
+            border-radius: 5px;
             font-size: 18px;
+            transition: background 0.3s ease;
+        }
+        .contact a:hover {
+            background-color: #005bb5;
         }
     </style>
 </head>
 <body>
-    <header>gajléH crochet</header>
+    <header>
+        <img src="logo.jpeg" alt="Logo" class="logo">
+        Nome Brand - Borse Artigianali
+    </header>
     <div class="container">
         <h2>Scopri le nostre borse fatte a mano</h2>
         <div class="gallery">
-            <img src="immagine1.jpg" alt="Borsa 1">
-            <img src="immagine2.jpg" alt="Borsa 2">
-            <img src="immagine3.jpg" alt="Borsa 3">
+            <div class="polaroid">
+                <img src="immagine1.jpeg" alt="Borsa 1">
+                <div class="caption">Modello Bukkyny</div>
+            </div>
+            <div class="polaroid">
+                <img src="immagine2.jpeg" alt="Borsa 2">
+                <div class="caption">Modello gawk gawk</div>
+            </div>
+            <div class="polaroid">
+                <img src="immagine3.jpeg" alt="Borsa 3">
+                <div class="caption">Modello Sburo</div>
+            </div>
         </div>
         <p>Materiali di alta qualità, design unico e realizzazione artigianale.</p>
         <div class="contact">
-            <h3>Contattaci per ordinare</h3>
-            <a href="mailto:jaeobvelasco@gmail.com">Email: jaeobvelasco@gmail</a>
+            <h3>Contattami per ordinare</h3>
+            <a href="mailto:jaeobvelasco@gmail.com">Email</a>
             <a href="https://www.instagram.com/gajleh.crochet">Instagram</a>
 			<a href="https://www.tiktok.com/@gajleeeh?_t=8oVdVC4LU5R&_r=1">TikTok</a>
 			<a href="https://www.vinted.it/member/69132537-jaeglej">Vinted</a>
