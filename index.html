@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gajléH crochet</title>
-	<link rel="icon" href="favicon.png" type="image/png">
+	<!-- Favicon predefinita -->
+	<link rel="icon" href="favicon-light.png" media="(prefers-color-scheme: light)">
+	<link rel="icon" href="favicon-dark.png" media="(prefers-color-scheme: dark)">
+
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -28,8 +31,8 @@
             justify-content: center;
         }
         .logo {
-            height: 50px;
-            margin-right: 15px;
+            max-width: 100%;
+			height: auto;
         }
         .container {
             max-width: 800px;
@@ -69,19 +72,19 @@
             padding: 10px 20px;
             text-decoration: none;
             color: #fff;
-            background-color: #0073e6;
+            background-color: #8c8c8c;
             border-radius: 5px;
             font-size: 18px;
             transition: background 0.3s ease;
         }
         .contact a:hover {
-            background-color: #005bb5;
+            background-color: #000000;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.jpeg" alt="Logo" class="logo">
+        <img src="logo.png" alt="Logo" class="logo">
         gajléH crochet
     </header>
     <div class="container">
